@@ -10,7 +10,7 @@ import com.view.mytablayout.view.fragment.BlankFragment1
 import com.view.mytablayout.view.fragment.BlankFragment2
 import com.view.mytablayout.view.fragment.BlankFragment3
 
-class VpAdapter(val manager: FragmentManager, lifecycle: Lifecycle, baner_list: ArrayList<BannersItem> ):
+class VPAdapter(val manager: FragmentManager, lifecycle: Lifecycle, baner_list: ArrayList<BannersItem> ):
     FragmentStateAdapter(FragmentActivity()){
 
     var image: String? = null

@@ -11,14 +11,14 @@ import com.google.android.material.tabs.TabLayoutMediator
 import com.view.mytablayout.R
 import com.view.mytablayout.model.BannerResponse
 import com.view.mytablayout.model.BannersItem
-import com.view.mytablayout.view.adapter.VpAdapter
+import com.view.mytablayout.view.adapter.VPAdapter
 import com.view.mytablayout.viewmodel.BannerViewModel
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity()
 {
 
-    private var vp_adapter: VpAdapter? = null
+    private var VP_adapter: VPAdapter? = null
     lateinit var tabLayout: TabLayout
     lateinit var viewPager2: ViewPager2
     var mstoreId: String? = null
@@ -41,7 +41,7 @@ class MainActivity : AppCompatActivity()
         tabLayout = findViewById(R.id.tb_layout)
         viewPager2 = findViewById(R.id.view_pg)
 
-        viewPager2.adapter = vp_adapter
+        viewPager2.adapter = VP_adapter
 
         TabLayoutMediator(tabLayout, viewPager2) { tab, position ->
             when(position)  {
@@ -82,7 +82,7 @@ class MainActivity : AppCompatActivity()
 
          fun VpAdapter()   {
 
-          view_pg?.adapter = VpAdapter(supportFragmentManager, lifecycle, baner_list)
+          view_pg?.adapter = VPAdapter(supportFragmentManager, lifecycle, baner_list)
 
 
 
