@@ -9,6 +9,7 @@ import com.google.gson.JsonObject
 import com.view.mytablayout.controllers.Utils.Constants
 import com.view.mytablayout.model.BannerResponse
 import com.view.mytablayout.model.BannersItem
+
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
